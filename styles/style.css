@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-seaweed: #177e89ff;
+  --clr-eagle-green: #084c61ff;
+  --clr-red: #db3a34ff;
+  --clr-yellow: #ffc857ff;
+  --clr-jet: #323031ff;
+  --clr-black: #1f1b1b;
+  --clr-white: #ffffff;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../images/background\ img.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  line-height: 2rem;
+}
+.card-container {
+  width: 85%;
+  background-color: var(--clr-yellow);
+  margin: 10rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px var(--clr-yellow), -3px -3px 8px var(--clr-yellow);
+}
+.icon {
+  width: 4rem;
+  color: rgb(119, 0, 255);
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--clr-red);
+}
+.question-para {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--clr-black);
+}
+
+.guesses {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr-eagle-green);
+}
+.error {
+  border: 2px dashed var(--clr-black);
+  width: 5rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.user-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--clr-red);
+  font-weight: 800;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: var(--clr-seaweed);
+  color: var(--clr-white);
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 1px var(--clr-seaweed), -1px -1px 1px var(--clr-seaweed);
+  border-radius: 5px;
+}
+button:active {
+  background-color: var(--clr-red);
+  box-shadow: 2px 2px red;
+  transform: translateY(1px);
+}
+.error-msg {
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .icon {
+    width: 2rem;
+  }
+  .question-para {
+    font-size: 1rem;
+  }
+
+  .guesses {
+    font-size: 1.5rem;
+  }
+  .error {
+  }
+}
